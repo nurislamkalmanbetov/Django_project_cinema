@@ -1,0 +1,6 @@
+python3 -m venv venv
+pip install django
+django-admin startproject config
+python3 manage.py startapp movies
+Поговорить и объяснить по поводу чистой и надежной архитектуры
+models -> write 
