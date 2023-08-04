@@ -1,0 +1,17 @@
+- перевод на русский язык
+- добавить данные в админ панели, актеры фильмы и тд
+
+- медия директорию открыть и прописать в сеттингс -> MEDIA_URL = '/media/'
+                                                MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+                                        urls.py -> 
+                    if settings.DEBUG:
+                    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+- добавить данные фильмов в админке 
+- views -> MoviesViews
+- templates -> directory -> movies -> movie_list.html
+- open urls.py in moivie app -> urls.py (project) ->     path('', include('movies.urls')),
+- open directory static -> туда закидываем : css/fonts/images/single-post-pic.jpg2/ и pic2.jpg
+- in templates/movies/ open movies.html copy from https://github.com/DJWOMS/django_movie_template/blob/master/movies.html
+                                прописать {% static '...' %}
+                                переименовать во вювс на movies.html

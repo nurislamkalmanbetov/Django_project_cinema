@@ -1,3 +1,8 @@
+python3 manage.py runser
+pip install Pillow
+python3 manage.py makemigrations
+python3 manage.py migrate
+admin.py -> 
 from django import forms
 from django.contrib import admin
 # from django.utils.safestring import mark_safe
@@ -17,3 +22,4 @@ admin.site.register(Actor)
 admin.site.register(Rating)
 admin.site.register(RatingStar)
 admin.site.register(Reviews)
+2 - Create superuser
